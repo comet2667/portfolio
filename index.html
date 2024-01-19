@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>포트폴리오</title>
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/intro.css">
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .side {
+                position: fixed;
+                bottom: 100px;
+                right: 10px;
+            }
+            .scorll {
+                position: sticky;
+            }
+            .scorll tr, td {
+                text-align: center;
+            }
+            .scroll tr td button {
+                height: 30px;
+                width: 50px;
+            }
+            .about-section {
+                height: 1000px;
+                background-color: rgb(191, 255, 255);
+            }
+            .project-section {
+                height: 1000px;
+                background-color: rgb(213, 255, 209);
+            }
+            .contact-section {
+                height: 1000px;
+                background-color: rgb(255, 240, 220);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="side">
+            <div class="scroll">
+                <table>
+                    <tr>
+                        <td><a href="#intro" style="text-decoration: none; color: black;"><button>Up</button></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#contact" style="text-decoration: none; color: black;"><button>Down</button></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <header>
+            <nav>
+                <div id="logo">박혜성 포트폴리오</div>
+                <ul class="list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id ="intro" class="intro-section">
+                <div class="profile">
+                    <div class="profile-name">박혜성</div>
+                    <div class="profile-img">
+                        <img src="img/profile.png"/>
+                    </div>
+                </div>
+                <div class="profile-data">
+                    <div class="profile-bday">1996.01.27.</div>
+                    <div class="profile-more"><a href="#about" style="text-decoration: none; color: white;"><button>more</button></a></div>
+                </div>
+            </section>
+            <section id="about" class="about-section">
+                <div class="about-contents">
+                    <div id="about-title">안녕하세요, 박혜성입니다.</div>
+                </div>
+            </section>
+            <section id ="project" class="project-section">
+                <div class="project-contents">
+                    <div id="project-title">Project</div>
+                    <div><a href="youtubeClone/youtube.html">프로젝트 보기</a></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id ="contact" class="contact-section">
+                <div class="contact-contents">
+                    <div id="contact-title">Contact</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+
+</html>
